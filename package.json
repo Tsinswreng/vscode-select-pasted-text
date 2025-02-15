@@ -14,10 +14,18 @@
   "contributes": {
     "commands": [
       {
-        "command": "select-pasted-text.helloWorld",
-        "title": "Hello World"
+        "command": "select-pasted-text.PasteAndSelect",
+        "title": "paste and select the text that was just pasted"
       }
     ]
+	,"keybindings": [
+		{
+			"command": "select-pasted-text.PasteAndSelect",
+			"key": "ctrl+v",
+			"mac": "cmd+v",
+			"when": "editorTextFocus"
+		}
+	]
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
