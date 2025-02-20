@@ -1,3 +1,18 @@
+/* 
+vsce package
+*/
+
+/* removed from package.json:
+	,"keybindings": [
+		{
+			"command": "select-pasted-text.PasteAndSelect",
+			"key": "ctrl+v",
+			"mac": "cmd+v",
+			"when": "editorTextFocus"
+		}
+	]
+*/
+
 import * as vscode from 'vscode';
 
 export function activate(context: vscode.ExtensionContext) {
